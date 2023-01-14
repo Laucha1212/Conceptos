@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --violeta:rgb(109, 131, 242);
+    --turquesa:rgb(45 212 191);
+
+    --red:#FF0000;
+    --dark:#080000;
+
+    --naranja:#f99400;
+    --blue:#02416d;
+    --darkblue:#031634;
+    --lightblue:#215a6d;
+    --powerblue:#066699;
+    --green:#13cd4a;
+}
+/*FONTS -------------------------------------------------
+font-family: 'Fjalla One', sans-serif;  TITULOS HEADER
+font-family: 'Merriweather', serif;     TEXTO
+font-family: 'Oswald', sans-serif;      TITULOS H1
+font-family: 'Rubik Bubbles', cursive;  TITULOS CONTENIDO
+---------------------------------------------------------*/
+
+/*---------------SKEW-------------------*/
+.skew-abajo{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-width:  0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent var(--darkblue) transparent;
+}
+.skew-arriba{
+    position: relative;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color:  var(--darkblue) transparent transparent transparent;
+    z-index: 10;
+}
+.container-skew{
+    background-color: var(--dar);
+}
+.container-wave{
+    background-color: var(--red);
+}
+/*-------------MOBILE FIRST------------------*/
+
+body{
+    font-family: 'Merriweather', serif;
+}
+/*-----NAV------*/
+nav{
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid var(--red);
+    background-color: var(--dark);
+}
+.container-nav{
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.container-nav_flags{
+}
+.container-nav_menu{
+    margin: 0 15px 0 0;
+    color: var(--red)
+}
+.container-nav_menu a{
+    text-decoration: none;
+    color: var(--red);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+/*-----HEADER-----*/
+header{
+    background: url(./images/bitmoji-bk.jpg);
+    background-position: right bottom;
+    height: 100vh;
+    border-bottom: 5px var(--red) solid;
+
+    display: flex;
+    justify-content: center; /*responsive: flex-start*/
+    align-items: flex-end;
+}
+.container-header{
+    width: 90%;
+    margin: 0 0 5vh 0vw;
+
+    color: #fff;
+}
+.containter-header_textbox h2{
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin: 0 0 20px;
+    font-weight: 900;
+}.containter-header_textbox h2 span{
+    font-size: 30px;
+}
+.containter-header_textbox h1{
+    font-family: 'Oswald', sans-serif;
+    color:var(--red);
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.containter-header_textbox p{
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    margin: 0 0 40px;
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 17px;
+}
+.containter-header_textbox-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containter-header_textbox-contact a{
+    background: var(--red);
+    padding: 15px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #fff;
+}
+/*-----MAIN------*/
+main{
+    background:var(--dark);
+}
+.container-main{
+    width: 100%;
+    margin:0 auto;
+}
+.container-main section{
+}
+
+.container-main section .container-main_content{
+    padding: 20px 20px;
+}
+.container-main section .container-main_content h3{
+    color: #fff;
+    font-family: 'Rubik Bubbles', cursive;
+    margin: 10px;
+    padding:90px auto;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.container-main section .container-main_content  p{
+    font-family: 'Merriweather', serif;
+}
+
+/*---------------CONTENIDO-------------*/
+
+/*ABOUT*/
+.container-main .about{
+    background-color: var(--dark);
+    color: #fff;
+}
+
+/*CONCEPTOS*/
+.container-main .conceptos{
+    background-color: var(--darkblue);
+    color: #fff;
+}
+
+/*CONTACT*/
+.container-main .contact{
+    background-color: var(--red);
+    padding: 15px 0;
+}
+.container-contact{
+    border: 1px solid #000;
+    width: 90%;
+    margin: auto;
+    background-color: var(--dark);
+    border-radius: 25px;
+    padding: 0;
+}
+.sub-container-contact{
+    border: 1px solid var(--red);
+    border-radius: 25px;
+    margin: auto;
+}
+.contact-text{
+    padding:10px;
+    color:#fff;
+}
+#fix-it-contact{
+    padding: 17px;
+}
+
+/*---------------FOOTER--------------*/
+footer{
+    background: #000;
+    color: #fff;
+    padding: 50px;
+}
